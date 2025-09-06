@@ -439,11 +439,11 @@ a {
   }
 
   .intro {
-    order: 2;  /* नीचे भेजो */
+    order: 2;  
   }
 
   .profile-card {
-    order: 1;  /* ऊपर लाओ */
+    order: 1;  
   }
 
   .photo-wrap {

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Adarsh Sharma — Full Stack Developer</title>
+    <meta name="description" content="Adarsh Sharma — Full Stack Developer | Projects, Resume, Contact" />
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="logo">Adarsh Sharma — Full Stack Developer</div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="intro">
+                    <h1 class="name">Adarsh Sharma</h1>
+                    <p class="lead">I am a Full Stack Developer skilled in modern web technologies (React, Next.js,
+                        Node.js). I build scalable, interactive user interfaces and real-time features like
+                        WebSocket/WebRTC.</p>
+
+                    <div class="cta-group">
+                        <a class="btn" href="adarshResume.pdf" download aria-label="Download Resume">⬇️ Download
+                            Resume</a>
+                        <button id="openResumeModal" class="btn" aria-haspopup="dialog">📄 View Resume</button>
+                        <a class="btn" href="#projects">View Projects</a>
+                    </div>
+
+                    <section id="about" class="about" aria-labelledby="about-heading">
+                        <h2 id="about-heading">About</h2>
+                        <p class="muted">Aspiring Full Stack Developer with hands-on experience building real-time
+                            applications and interactive UIs. Currently pursuing MCA and focused on producing
+                            production-ready web applications.</p>
+                    </section>
+
+                    <!-- <div class="resume-inline-wrapper">
+                        <div class="resume-tools">
+                            <button id="toggleInline" class="btn" aria-expanded="false">🔽 Show / Hide Resume
+                                Inline</button>
+                            <a class="btn" href="adarshResume.pdf" download>⬇️ Download PDF</a>
+                            <span class="tip">Tip: You can view in modal or download</span>
+                        </div>
+
+                        <div id="inlineResume" class="resume-box hidden" aria-hidden="true" role="region"
+                            aria-label="Resume preview">
+                            <object data="adarshResume.pdf" type="application/pdf" width="100%" height="600">
+                                <p class="muted">Your browser does not support embedded PDFs. <a href="adarshResume.pdf"
+                                        class="accent">Download the resume</a> to view it.</p>
+                            </object>
+                        </div>
+                    </div> -->
+                </div>
+
+                <aside class="card profile-card" aria-label="Profile card">
+                    <div class="photo-wrap">
+                        <img class="photo" src="myDp.jpeg" alt="Adarsh Sharma" />
+                        <div class="ring" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="profile-meta">
+                        <strong class="profile-name">Adarsh Sharma</strong>
+                        <div class="profile-role">Full Stack Developer</div>
+
+                        <div class="profile-links">
+                            <a class="btn" href="mailto:adarshsharma7p@gmail.com">Email</a>
+                            <a class="btn" href="https://github.com/adarshsharma7" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <div class="skill-head"><span>HTML & CSS</span></div>
+                        <div class="bar"><i style="width:90%"></i></div>
+                        <small class="muted">Semantic markup, responsive layouts, CSS animations</small>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>Tailwind CSS</span></div>
+                        <div class="bar"><i style="width:85%"></i></div>
+                        <small class="muted">Utility-first styling, component design</small>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>JavaScript / TypeScript</span></div>
+                        <div class="bar"><i style="width:80%"></i></div>
+                        <small class="muted">ES6+, async patterns</small>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>React / Next.js</span></div>
+                        <div class="bar"><i style="width:80%"></i></div>
+                        <small class="muted">Components, hooks, SSR/SSG basics</small>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>Node.js / Express</span></div>
+                        <div class="bar"><i style="width:75%"></i></div>
+                        <small class="muted">REST APIs, middleware</small>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>MongoDB</span></div>
+                        <div class="bar"><i style="width:75%"></i></div>
+                        <small class="muted">Schema design, Mongoose</small>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>WebSockets / WebRTC</span></div>
+                        <div class="bar"><i style="width:70%"></i></div>
+                        <small class="muted">Real-time sync, audio basics</small>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-head"><span>Git</span></div>
+                        <div class="bar"><i style="width:80%"></i></div>
+                        <small class="muted">Branching, PRs</small>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="grid projects-grid">
+                    <article class="proj">
+                        <h3>SyncDraw — Real-Time Collaborative Drawing</h3>
+                        <p class="muted">Collaborative drawing with merge/split canvas, in-app audio and chat. Focus on
+                            low-latency state sync.</p>
+                        <div class="tags"><span class="tag">Next.js</span><span class="tag">WebRTC</span><span
+                                class="tag">Socket.IO</span></div>
+                        <div class="proj-links">
+                            <a class="btn" href="https://github.com/adarshsharma7/realtime-draw" target="_blank"
+                                rel="noopener">Repo</a>
+                            <a class="btn" href="https://syncdraw.netlify.app/" target="_blank" rel="noopener">Live</a>
+                        </div>
+                    </article>
+
+                    <article class="proj">
+                        <h3>Stream Sync — Interactive Video Platform</h3>
+                        <p class="muted">Custom synchronized video playback, chat and stories with real-time updates
+                            using Pusher.</p>
+                        <div class="tags"><span class="tag">Next.js</span><span class="tag">Pusher</span></div>
+                        <div class="proj-links">
+                            <a class="btn" href="https://github.com/adarshsharma7/sync-video" target="_blank"
+                                rel="noopener">Repo</a>
+                            <a class="btn" href="https://streaming-sync.vercel.app/" target="_blank"
+                                rel="noopener">Live</a>
+                        </div>
+                    </article>
+
+                    <article class="proj">
+                        <h3>College Website — SPRC Baghpat</h3>
+                        <p class="muted">
+                            A responsive and accessible website built for my college with modern UI design, structured
+                            navigation, and dynamic content sections.
+                           
+                        </p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="proj-links">
+                            <a class="btn" href="https://github.com/adarshsharma7/sprc-college-website" target="_blank"
+                                rel="noopener">Repo</a>
+                            <a class="btn" href="https://sprcbaghpat.vercel.app/" target="_blank"
+                                rel="noopener">Live</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section id="contact" class="section" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <p class="muted">Email: <a href="mailto:adarshsharma7p@gmail.com">adarshsharma7p@gmail.com</a> •
+                    LinkedIn: <a href="https://www.linkedin.com/in/adarsh-sharma-19710a264" target="_blank"
+                        rel="noopener">linkedin</a></p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            Built with ❤️ by Adarsh • <span class="muted">Responsive & Accessibility-minded</span>
+        </footer>
+    </div>
+
+    <!-- Modal (hidden by default) -->
+    <div id="resumeModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Resume viewer">
+        <div class="modal" role="document">
+            <header class="modal-header">
+                <div class="modal-title">Resume — Adarsh Sharma</div>
+                <div class="modal-actions">
+                    <a class="btn" href="adarshResume.pdf" download>⬇️ Download</a>
+                    <button id="closeModal" class="close-btn" aria-label="Close resume viewer">✕ Close</button>
+                </div>
+            </header>
+            <iframe id="modalPdf" class="modal-iframe" src="adarshResume.pdf" title="Adarsh Resume (PDF)"></iframe>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

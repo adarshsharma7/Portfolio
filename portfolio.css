@@ -297,8 +297,15 @@ a {
 .skill-head {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: 700;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+   
+}
+
+.skill-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .bar {
